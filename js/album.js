@@ -3,36 +3,36 @@ const albums = $('.gallery-fancybox');
 const apps = {
     products: [
         
-        { img: "../img/Album/KTIU2754.jpg"},
-        { img: "../img/Album/KTIU2868.jpg"},
-        { img: "../img/Album/KTIU3407.jpg"},
-        { img: "../img/Album/KTIU2516.jpg"},
+        { img: "https://nhuandoan.github.io/Album.github.io/Album/KTIU2754.jpg"},
+        { img: "https://nhuandoan.github.io/Album.github.io/Album/KTIU2868.jpg"},
+        { img: "https://nhuandoan.github.io/Album.github.io/Album/KTIU3407.jpg"},
+        { img: "https://nhuandoan.github.io/Album.github.io/Album/KTIU2516.jpg"},
         
-        { img: "../img/Album/KTIU2923.jpg"},
+        { img: "https://nhuandoan.github.io/Album.github.io/Album/KTIU2923.jpg"},
         
-        { img: "../img/Album/KTIU3560.jpg"},
+        { img: "https://nhuandoan.github.io/Album.github.io/Album/KTIU3560.jpg"},
        
-        { img: "../img/Album/KTIU3585.jpg"},
+        { img: "https://nhuandoan.github.io/Album.github.io/Album/KTIU3585.jpg"},
         
-        { img: "../img/Album/KTIU5141.jpg"},
-        { img: "../img/Album/KTIU3565.jpg"},
-        { img: "../img/Album/KTIU5973.jpg"},
-        { img: "../img/Album/KTIU4321a.jpg"},
+        { img: "https://nhuandoan.github.io/Album.github.io/Album/KTIU5141.jpg"},
+        { img: "https://nhuandoan.github.io/Album.github.io/Album/KTIU3565.jpg"},
+        { img: "https://nhuandoan.github.io/Album.github.io/Album/KTIU5973.jpg"},
+        { img: "https://nhuandoan.github.io/Album.github.io/Album/KTIU4321a.jpg"},
         
        
-        { img: "../img/Album/KTIU3949.jpg"},
-        { img: "../img/Album/KTIU3974.jpg"},
+        { img: "https://nhuandoan.github.io/Album.github.io/Album/KTIU3949.jpg"},
+        { img: "https://nhuandoan.github.io/Album.github.io/Album/KTIU3974.jpg"},
         
-        { img: "../img/Album/KTIU4464.jpg"},
-        { img: "../img/Album/KTIU4568 1318.jpg"},
-        { img: "../img/Album/KTIU4958.jpg"},
-        { img: "../img/Album/KTIU4732.jpg"},
-        { img: "../img/Album/KTIU4796.jpg"},
-        { img: "../img/Album/KTIU4732.jpg"},
-        { img: "../img/Album/KTIU4993.jpg"},
-        { img: "../img/Album/KTIU5980.jpg"},
+        { img: "https://nhuandoan.github.io/Album.github.io/Album/KTIU4464.jpg"},
+        { img: "https://nhuandoan.github.io/Album.github.io/Album/KTIU4568 1318.jpg"},
+        { img: "https://nhuandoan.github.io/Album.github.io/Album/KTIU4958.jpg"},
+        { img: "https://nhuandoan.github.io/Album.github.io/Album/KTIU4732.jpg"},
+        { img: "https://nhuandoan.github.io/Album.github.io/Album/KTIU4796.jpg"},
+        { img: "https://nhuandoan.github.io/Album.github.io/Album/KTIU4732.jpg"},
+        { img: "https://nhuandoan.github.io/Album.github.io/Album/KTIU4993.jpg"},
+        { img: "https://nhuandoan.github.io/Album.github.io/Album/KTIU5980.jpg"},
         
-        { img: "../img/Album/KTIU5746.jpg"},
+        { img: "https://nhuandoan.github.io/Album.github.io/Album/KTIU5746.jpg"},
         
         
     ],
