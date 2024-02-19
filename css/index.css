@@ -57,6 +57,7 @@ nav {
     font-weight: bold;
 }
 
+
 .font-family {
     font-family: 'Great Vibes';
 }
@@ -76,7 +77,7 @@ nav {
 
 .count-down-clock {
     color: rgb(253, 170, 184);
-    font-size: 140%;
+    font-size: 120%;
     display: flex;
     justify-content: center;
 }
