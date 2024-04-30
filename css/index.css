@@ -24,8 +24,8 @@ nav {
 }
 
 .carousel-caption {
-    text-shadow: 1px 1px 1px rgb(247, 123, 143);
-    color: rgb(255, 173, 187);
+    text-shadow: 1px 1px 1px rgb(247, 29, 66);
+    color: rgb(253, 116, 139);
     font-family: 'Times New Roman', Times, serif;
 }
 
@@ -44,7 +44,7 @@ nav {
 
 
 .invitation-box {
-    border: 4px solid pink;
+    border: 4px solid rgb(249, 134, 154);
     height: calc(100% - 58px);
 }
 
@@ -67,7 +67,7 @@ nav {
 }
 
 #today {
-    background-color: pink;
+    background-color: rgb(250, 145, 162);
     color: white;
     text-align: center;
     width: 30px;
@@ -76,7 +76,7 @@ nav {
 }
 
 .count-down-clock {
-    color: rgb(253, 170, 184);
+    color: rgb(250, 125, 146);
     font-size: 120%;
     display: flex;
     justify-content: center;
@@ -120,7 +120,7 @@ nav {
 
 .wedding-event {
     color: white;
-    background: url("../img/Album/KTIU4796.jpg");
+    background: url("../img/Album_nen/KTIU4796.jpg");
     background-color: #F2EDED!important;
     background-position: center center;
     background-size: cover;
@@ -140,3 +140,4 @@ nav {
     border: 6px solid pink;
     height: calc(100%);
 }
+

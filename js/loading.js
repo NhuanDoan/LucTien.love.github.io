@@ -10,3 +10,6 @@
      loader.style.display = 'none';
      content.style.display = 'block';
  });
+
+
+  
