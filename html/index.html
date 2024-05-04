@@ -12,8 +12,9 @@
     <link rel="stylesheet" href="../css/index.css">
     <link rel="stylesheet" href="../css/snowfall.css">
     <link rel="stylesheet" href="../css/loading.css">
-    <script src="../bootstrap-5.2.3-dist/js/bootstrap.min.js"></script>
     <script src="../js/jquery-3.4.1.min.js"></script>
+    <script src="../bootstrap-5.2.3-dist/js/bootstrap.min.js"></script>
+   
 </head>
 
 
@@ -59,20 +60,20 @@
                 </div>
                 <div class="offcanvas-body mx-auto">
                     <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 fs-5">
-                        <li class="nav-item px-3">
-                            <a class="nav-link active" aria-current="page" href="#capdoi">Cặp đôi</a>
+                        <li class="nav-item px-3" data-bs-dismiss="offcanvas" >
+                            <a class="nav-link active" aria-current="page"  href="#capdoi">Cặp đôi</a>
                         </li>
-                        <li class="nav-item px-3">
+                        <li class="nav-item px-3" data-bs-dismiss="offcanvas">
                             <a class="nav-link active" aria-current="page" href="#albumcuoi">Album cưới</a>
                         </li>
-                        <li class="nav-item px-3">
+                        <li class="nav-item px-3" data-bs-dismiss="offcanvas">
                             <a class="nav-link active" aria-current="page" href="#sukien">Sự kiện</a>
                         </li>
-                        <li class="nav-item px-3">
-                            <a class="nav-link active" aria-current="page" href="#loichuc">Lời chúc</a>
+                        <li class="nav-item px-3" data-bs-dismiss="offcanvas">
+                            <a class="nav-link active" aria-current="page" href="#ngaycuoi">Ngày cưới</a>
                         </li>
-                        <li class="nav-item px-3">
-                            <a class="nav-link active" aria-current="page" href="#mungcuoi">Mừng cưới</a>
+                        <li class="nav-item px-3" data-bs-dismiss="offcanvas">
+                            <a class="nav-link active" aria-current="page" href="#camon">Lời cảm ơn</a>
                         </li>
                     </ul>
                 </div>
@@ -80,10 +81,14 @@
         </div>
     </nav>
     <script>
-        function closeOffCanvas() {
-            $('.offcanvas').offcanvas('hide');
-        }
+        $(document).ready(function () {
+            $('.navbar-nav>li>a').on('click', function () {
+                console.log("Clicked");
+                $('.navbar-collapse').collapse('hide');
+            });
+        });
     </script>
+    
     
     <div id="carousel" class="carousel slide position-relative" data-bs-ride="carousel">
         <div class="carousel-indicators">
@@ -122,17 +127,17 @@
         </button>
     </div>
     <section>
-        <div class="row container invitation-section my-5">
+        <div class="row container invitation-section my-5 py-5" id="ngaycuoi">
             <div class="col-12 col-md-6">
                 <div class="invitation-box left mx-5 my-5">
                     <div class="inner text-center px-3 ">
                         <h2 class="my-4">Save the Date</h2>
                         <span class="my-1">For the wedding of</span>
                         <h3 class="my-4">Thành Lực & Như Tiên</h3>
-                        <p class="my-5">Một lời chúc của bạn chắc chắn sẽ làm cho đám cưới của chúng tôi có thêm một
+                        <p class="my-5">Sự hiện diện của bạn chắc chắn sẽ làm cho đám cưới của chúng tôi có thêm một
                             niềm
                             hạnh phúc!</p>
-                        <a href="#wishes" class="btn btn-danger my-5">Gửi lời chúc <i class="fa-solid fa-arrow-right"
+                        <a href="#sukien" class="btn btn-danger my-5">Xem ngày cưới <i class="fa-solid fa-arrow-right"
                                 style="color: #ffffff;"></i></a>
                     </div>
                 </div>
@@ -233,7 +238,7 @@
             </div>
             <div class="row">
                 <div class="col-12 col-md-6 ">
-                    <img src="https://nhuandoan.github.io/Album.github.io/Album/KTIU4022-Recovered.jpg"
+                    <img src="../img/Album_nen/KTIU4022-Recovered.jpg"
                         class="img-fluid">
                 </div>
                 <div class="col-12 col-md-6 px-5 my-3 d-flex align-items-center">
@@ -244,18 +249,14 @@
                             không đâu sánh bằng đối với mỗi con người. Đó luôn là nơi tràn ngập tình yêu
                             thương để ta trở về.”</p>
                         <ul class="my-5">
-                            <li class="nav-item mx-2"><a href="https://www.facebook.com/mith.vip" target="_blank"
+                            <li class="nav-item mx-2"><a href="https://www.facebook.com/share/Kb1fpfBX6rQPNw12/" target="_blank"
                                     class="nav-link"><i class="fa-brands fa-facebook fa-2xl"
                                         style="color: #005eff;"></i></a>
-                            </li>
-                            <li class="nav-item mx-2"><a href="https://www.instagram.com/thudepzaiii" target="_blank"
-                                    class="nav-link"><i class="fa-brands fa-instagram fa-2xl"
-                                        style="color: #ff85f5;"></i></a>
                             </li>
                         </ul>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row" >
                     <div class="col-12 col-md-6 px-5 my-3 d-flex align-items-center">
                         <div class="content">
                             <h2 class="font-family">Nguyễn Thị Như Tiên</h2>
@@ -263,32 +264,29 @@
                                 đẹp nhất cho những người bên cạnh. Thích nghe nhạc, hát nghêu ngao những
                                 giai điệu vui tươi, thích nuôi cá, yêu thiên nhiên và ước mơ có cho mình một
                                 vườn hồng khoe sắc.</p>
-                            <ul class="my-5">
-                                <li class="nav-item mx-2"><a href="https://www.facebook.com/maituongvi.ne"
+                            <ul class="my-5" >
+                                <li class="nav-item mx-2"><a href="https://www.facebook.com/share/Z69CjqRek3epm11w/"
                                         target="_blank" class="nav-link"><i class="fa-brands fa-facebook fa-2xl"
                                             style="color: #005eff;"></i></a>
                                 </li>
-                                <li class="nav-item mx-2"><a href="https://www.instagram.com/zidepgaiii" target="_blank"
-                                        class="nav-link"><i class="fa-brands fa-instagram fa-2xl"
-                                            style="color: #ff85f5;"></i></a>
-                                </li>
+
                             </ul>
                         </div>
                     </div>
                     <div class="col-12 col-md-6">
-                        <img src="https://nhuandoan.github.io/Album.github.io/Album/KTIU2923.jpg"
+                        <img src="../img/Album_nen/KTIU2923.jpg"
                             class="img-fluid">
                     </div>
                 </div>
             </div>
         </div>
-        <div class="row section-accessibilities my-5">
+        <div class="row section-accessibilities my-5" >
             <div class="container">
                 <div class="button text-center">
                     <button class="btn btn-danger mx-2 btn-lg my-2"><i class="fa-regular fa-message px-2"
                             style="color: #ffffff;"></i>Gửi lời chúc
                     </button>
-                    <button class="btn btn-danger mx-2 btn-lg my-2"><i class="fa-solid fa-money-check-dollar px-2"
+                    <button class="btn btn-danger mx-2 btn-lg my-2"  data-bs-toggle="modal" data-bs-target="#modalID"><i class="fa-solid fa-money-check-dollar px-2"
                             style="color: #ffffff;"></i>
                         Mừng cưới
                     </button>
@@ -299,8 +297,41 @@
                 </div>
             </div>
         </div>
+        <div class="modal face" id="modalID">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 class="mx-auto">MỪNG CƯỚI</h3>
+                        <button data-bs-dismiss="modal" class="px-2" style="border: none;background-color: white;">
+                             <i class="fa-solid fa-x fa-xl"></i> </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row form-group my-3">
+                            <div class="col-12">
+                                <img style="width: 100%; height: auto;" src="../img/qrthanhtoan.jpg" alt="qr">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-success" data-bs-dismiss="modal">
+                            Thoát
+                        </button>
+                        <button class="btn btn-danger" id="btnDK">
+                            Hoàn tất
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            $("#btnDK").click(function(){
+                alert("Cảm ơn vì sự dễ thương này!!!!");
+                $("#modalID").modal("hide");
+            });
+        </script>
+
         <div class="row event-section"
-            style="background: url('https://nhuandoan.github.io/Album.github.io/Album/KTIU6437\ 1318.jpg') center center/cover no-repeat local;">
+            style="background: url('../img/Album_nen/KTIU6437\ 1318.jpg') center center/cover no-repeat local;">
             <div class="d-flex align-items-center justify-content-center">
                 <div class="top-area">
                     <h1 class="text-center font-family">Mình yêu nhau, yêu nhau bình yên thôi!</h1>
@@ -321,68 +352,34 @@
                     </div>
                 </div>
                 <div class="wedding row container">
-                    <div class="col-12 col-md-3 px-3 text-center my-3">
+                    <div class="col-12 col-md-6 px-3 text-center my-3">
                         <div class="card section-bg-img py-3">
-                            <h3>TIỆC CƯỚI NHÀ GÁI (01/04)</h3>
+                            <h3>TIỆC CƯỚI NHÀ GÁI (25/05)</h3>
                             <div class="image-wrap">
                                 <img class="card-img px-2"
                                     src="https://cdn.biihappy.com/ziiweb/website/6409f0ee41a8b6a1810b90f4/3465c2d283e6dd162555b9b15e57c662.jpeg"
                                     alt="">
                             </div>
                             <div class="card-body">
-                                <p><strong>11:00 01/04/2023</strong></p>
-                                <p>Cái Trôm, Tân Quới Trung, Vũng Liêm, Vĩnh Long</p>
+                                <p><strong>25/05/2024</strong></p>
+                                <p>Ấp Trung Tín, TT Vũng Liêm, Vĩnh Long</p>
                                 <a class="btn btn-outline-danger" href="https://goo.gl/maps/VLbJWphmL9EXKGKp7"
                                     target="_blank">Xem
                                     bản đồ</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-3 px-3 text-center my-3">
+                    <div class="col-12 col-md-6 px-3 text-center my-3">
                         <div class="card section-bg-img py-3">
-                            <h3>TIỆC CƯỚI NHÀ TRAI (01/04)</h3>
+                            <h3>TIỆC CƯỚI NHÀ TRAI (26/05)</h3>
                             <div class="image-wrap">
                                 <img class="card-img px-2"
                                     src="https://cdn.biihappy.com/ziiweb/website/6409f0ee41a8b6a1810b90f4/1abc67d16a1fc1619bbbec9f8ed89f7d.jpeg"
                                     alt="">
                             </div>
                             <div class="card-body">
-                                <p><strong>18:30 01/04/2023</strong></p>
-                                <p>Ấp 3, Tân An Luông, Vũng Liêm, Vĩnh Long</p>
-                                <a class="btn btn-outline-danger" href="https://maps.app.goo.gl/oVPkN3ocYYc8ph8E7"
-                                    target="_blank">Xem
-                                    bản đồ</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-3 px-3 text-center my-3">
-                        <div class="card section-bg-img py-3">
-                            <h3>TIỆC CƯỚI NHÀ GÁI (26/05)</h3>
-                            <div class="image-wrap">
-                                <img class="card-img px-2"
-                                    src="https://cdn.biihappy.com/ziiweb/website/6409f0ee41a8b6a1810b90f4/bf0aa457d6bc33ff72140ae896929aab.jpeg"
-                                    alt="">
-                            </div>
-                            <div class="card-body">
-                                <p><strong>14:30 02/04/2023</strong></p>
-                                <p>Ấp Trung Tín, TT Vũng Liêm, Vũng Liêm, Vĩnh Long</p>
-                                <a class="btn btn-outline-danger" href="https://goo.gl/maps/rmYZeBinkw7ZKfwz6"
-                                    target="_blank">Xem
-                                    bản đồ</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-3 px-3 text-center my-3">
-                        <div class="card section-bg-img py-3">
-                            <h3>TIỆC CƯỚI NHÀ TRAI (26/05)</h3>
-                            <div class="image-wrap">
-                                <img class="card-img px-2"
-                                    src="https://cdn.biihappy.com/ziiweb/default/website/21b07b7d583692f49091b87facbf2c92.png"
-                                    alt="">
-                            </div>
-                            <div class="card-body">
                                 <p><strong>26/05/2024</strong></p>
-                                <p>Ấp 3, Tân An Luông, Vũng Liêm, Vĩnh Long</p>
+                                <p>Ấp Vàm An, xã Quới An, Vũng Liêm, Vĩnh Long</p>
                                 <a class="btn btn-outline-danger" href="https://maps.app.goo.gl/oVPkN3ocYYc8ph8E7"
                                     target="_blank">Xem
                                     bản đồ</a>
@@ -400,7 +397,6 @@
                         <h1 class="font-family">Album Hình Cưới</h1>
                         <p>Được ai đó yêu sâu sắc sẽ mang lại cho bạn sức mạnh, trong khi yêu ai đó sâu sắc sẽ cho
                             bạn dũng khí.</p>
-                        <a href="https://thuvi.love/photo-album" target="_blank" class="btn btn-info">Xem Album</a>
                     </div>
                 </div>
             </div>
@@ -412,59 +408,17 @@
             </div>
             <script src="../js/album.js"></script>
         </div>
-        <div class="contact-section py-5" id="loichuc">
-            <div class="container">
-                <div class="row">
-                    <div class="col col-md-12 text-center my-5">
-                        <div class="section-title">
-                            <h1 class="font-family">Sổ Lưu Bút</h1>
-                            <p>Cảm ơn bạn rất nhiều vì đã gửi những lời chúc mừng tốt đẹp nhất đến đám cưới của chúng
-                                tôi!</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-12 col-md-6 px-2 my-2">
-                        <div class="form-group wish-form">
-                            <form class="form validate-rsvp-form row p-2 my-5" method="post">
-                                <div class="col-6 col-sm-6 p-2">
-                                    <input type="text" name="name" class="form-control" placeholder="Nhập họ tên*">
-                                </div>
-                                <div class="col-6 col-sm-6 p-2">
-                                    <input type="email" name="email" class="form-control" placeholder="Nhập email">
-                                </div>
-                                <div class="col-12 col-sm-12 p-2">
-                                    <textarea class="form-control" name="content" placeholder="Nhập lời chúc của bạn*"
-                                        rows="5"></textarea>
-                                </div>
-                                <div class="col-12 col-sm-12 text-center">
-                                    <button type="submit" class="btn btn-danger my-5">Gửi lời chúc</button>
-                                    <div id="loader">
-                                        <i class="ti-reload"></i>
-                                    </div>
-                                </div>
-                                <!-- <div class="col col-md-12 success-error-message">
-                                    <div id="success">Thank you</div>
-                                    <div id="error">Gửi lời chúc thất bại, vui lòng thử lại sau giây lát! </div>
-                                </div> -->
-                            </form>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 px-2 my-2">
-                        <div class="wish-box">
-                            <!-- <div class="wish-box-item p-2">
-                                <strong>Bạn cùng Lớp Nhưng Không Thân Nha</strong>
-                                <p>Chúc mừng hạnh phúc 2 bạn chủe. Chúc 2 bạn điều tốt nhất &lt;3</p>
-                            </div> -->
-                        </div>
-                    </div>
-                </div>
-
     </section>
-    <div class="container">
-
-    </div>
-    <footer class="site-footer footer-style-1">
+    <footer class="site-footer footer-style-1 py-5" id="camon">
+        <div class="row">
+            <div class="col col-md-12 text-center my-5">
+                <div class="section-title">
+                    <h1 class="font-family">Cảm ơn</h1>
+                    <p>Cảm ơn bạn rất nhiều vì sự có mặt và những lời chúc mừng tốt đẹp nhất đến đám cưới của chúng
+                        tôi!</p>
+                </div>
+            </div>
+        </div>
         <div class="row">
             <div class="col">
                 <div class="couple-pic text-center">
